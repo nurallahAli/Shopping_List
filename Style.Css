@@ -1,0 +1,198 @@
+/* Start Varibels  */
+:root{
+    --mainn-Color: #73b282;
+    --main-Colr: #19c8fa;
+    --mainnn-Colr: #0d86ae;
+    --mainnnn-Colr: #6f8171;
+    --socondary-Color: #ff3c38;
+    --P-Color: #777777a6;
+}
+/* End Varibels  */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+}
+/* Medium */
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+}
+/* End Global Rules */
+div.parent .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.parent h2{margin: 75px 0 20px 0;}
+div.parent p{font-size: 12px;color: var(--P-Color);}
+div.parent .parent-btn{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+div.parent .parent-btn .shoop{
+    width: 150px;
+    height: 115px;
+    background-color: white;
+    box-shadow: -2px 2px 10px 5px #ddd;
+}
+div.parent .parent-btn .check:hover span,
+div.parent .parent-btn .shoop:hover span{color: #fff;}
+div.parent .parent-btn .check:hover,
+div.parent .parent-btn .shoop:hover{
+    background-color: var(--mainn-Color);
+    transition: 0.4s;
+}
+div.parent .parent-btn .shoop:hover i{color: white;}
+div.parent .parent-btn .check{
+    width: 150px;
+    height: 115px;
+    background-color: white;
+    box-shadow: -2px 2px 10px 5px #ddd;
+}
+div.parent .parent-btn .shoop button{
+    border: none;
+    background: none;
+}
+div.parent .parent-btn .check button{
+    position: relative;
+    left: 65px;
+    top: 35px;
+    z-index: 2;
+    border-radius: 50%;
+    background-color: var(--mainn-Color);
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+div.parent .parent-btn .shoop i{
+    position: relative;
+    left: 65px;
+    top: 35px;
+    color: var(--mainn-Color);
+    font-size: 20px;
+}
+div.parent .parent-btn .check i{color: white;}
+div.parent .parent-btn .check span,
+div.parent .parent-btn .shoop span{
+    display: block;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin-top: 45px;
+}
+div.parent .inbn{margin-top: 75px;}
+div.parent .inbn input[type="text"]{
+    outline: none;
+    border: 1px solid;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: black #ccc #ccc black;
+    padding: 10px;
+}
+div.parent .inbn button{
+    padding: 7px;
+    border-radius: 12px;
+    background-color: var(--mainn-Color);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+}
+div.parent .child{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    background-color: white;
+    box-shadow: -2px 2px 10px 5px #ddd;
+    justify-content: space-between;
+    height: 35px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 15px;
+}
+div.parent .child .btn button{
+    border: none;
+    background: none;
+}
+div.parent .child .btn button i.one{
+    color: var(--socondary-Color);
+}
+div.parent .child .btn button i.two{
+    color: var(--mainnn-Colr)
+}
+div.parent .child .btn button i.three{
+   color: var(--mainnnn-Colr);
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media(max-width: 767px){
+    div.parent h2{font-size: 18px;}
+    div.parent p{
+        font-size: 11px;
+        text-align: center;
+    }
+    div.parent .parent-btn{
+        gap: 10px;
+        margin-top: 30px;
+    }
+    div.parent .inbn{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    div.parent .inbn input[type="text"]{
+        width: 250px;
+        height: 35px;
+    }
+    div.parent .inbn button{
+        width: fit-content;
+        margin: auto;
+    }
+    div.parent .child{
+        width: 300px;
+    }
+}
